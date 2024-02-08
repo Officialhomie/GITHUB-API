@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+body {
+    background-color: #141C2F;
+}
+
+.container {
+    width: 700px;
+    height: 500px;
+    margin: 100px 300px;
+    border: 2px solid white;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+#section-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 30px;
+}
+
+.dev, .light, .dark {
+    font-size: 30px;
+    color: #fff;
+}
+
+.bi-sun-fill, .bi-moon-fill {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mode {
+    display: flex;
+}
+
+.light-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.dark-mode {
+    display: none;
+}
+
+#section-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F2A48;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 0 30px;
+}
+
+.bi-search {
+    color: #0172ED;
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+.input {
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 25px;
+}
+
+.input::placeholder {
+    color: #fff; /* Placeholder text color */
+    font-style: italic; /* Placeholder text style */
+}
+
+.getName {
+    padding: 15px 30px;
+    background-color: #0172ED;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#section-three {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    background-color: #1F2A48;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+}
+
+.nandd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+    margin-bottom: 15px;
+}
+
+.name, .date-joined{
+    color: white;
+    font-size: 25px;
+}
+
+.bio {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.fans {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #141C2F;
+    /* background-color: black; */
+    padding: 5px 30px;
+    border-radius: 10px;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.fans p {
+    color: #fff;
+}
+
+.repos, .followers, .following{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.last {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 0 5px
+}
+
+.last-sp {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
