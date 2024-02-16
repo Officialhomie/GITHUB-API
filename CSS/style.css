@@ -9,9 +9,17 @@ body {
     background-color: #141C2F;
 }
 
+.img-holder {
+    width: 100%;
+}
+
+.image {
+    width: 170%;
+}
+
 .container {
-    width: 700px;
-    height: 500px;
+    width: 900px;
+    height: 700px;
     margin: 100px 300px;
     border: 2px solid white;
     overflow-x: hidden;
@@ -36,6 +44,7 @@ body {
     cursor: pointer;
 }
 
+
 .mode {
     display: flex;
 }
@@ -47,8 +56,19 @@ body {
     gap: 15px;
 }
 
+.light-mode.alternate {
+    display: none;
+}
+
 .dark-mode {
     display: none;
+}
+
+.dark-mode.alternate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 #section-two {
@@ -73,6 +93,10 @@ body {
     outline: none;
     border: none;
     font-size: 25px;
+    width: 100%;
+}
+.inp-holder {
+    display: flex;
 }
 
 .input::placeholder {
@@ -88,6 +112,10 @@ body {
     border-radius: 10px;
     font-size: 20px;
     color: #fff;
+}
+
+.getName:hover {
+    cursor: pointer;
 }
 
 #section-three {
@@ -127,9 +155,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 100px;
     width: 100%;
     background-color: #141C2F;
-    /* background-color: black; */
     padding: 5px 30px;
     border-radius: 10px;
     height: 70px;
@@ -148,12 +176,22 @@ body {
 .last {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
+    gap: 50px; 
     padding: 0 5px
 }
 
 .last-sp {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 15px;
+}
+
+.bi-geo-alt-fill, .bi-twitter-x, .bi-link-45deg, .bi-buildings {
+    font-size: 25px;
+    color: #0172ED;
+}
+
+.location, .twitter, .link {
+    color: #fff;
+    cursor: pointer;
 }
